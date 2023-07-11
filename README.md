@@ -16,11 +16,11 @@ The dataset is based on DUC 2005-2007 datasets in [NIST](https://www-nlpir.nist.
 ### Data Structure
 
 We repurpose the DUC datasets for a knowledge-intensive task, spliting them into input-output pairs and a knowledge corpus. <br>
-For the pairs, we also divide them into train, validation, and test splits, which are `kiqfs_pairs_train/val/test.jsonl`. For each `*.jsonl`. The data format is:
+For the pairs, we also divide them into train, validation, and test splits, which are `kiqfs_pairs_train/val/test.jsonl`. The data format of each line in `*.jsonl` is:
 
 ```python
 {
-    'id': 'D301I', # original id for each cluster on DUC Datasets
+    'id': 'D301I', # original id of each cluster on the DUC Datasets
     'query': 'Nobel prizes are awarded each year for achievement...',
     'summaries': ['s1', 's2', ..., 'sn'] # a list of summaries
 }
