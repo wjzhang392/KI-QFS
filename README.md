@@ -11,7 +11,7 @@ This repository contains codes and KI-QFS dataset described in the paper "Tackli
 
 ## Data Description
 
-The dataset is based on DUC 2005-2007 dataset in [NIST](https://www-nlpir.nist.gov/projects/duc/data.html). Please ask for their data access before using our dataset. The dataset is located in `dataset/`. Please refer to the [paper](paper/kiqfs.pdf) for more details of the dataset.
+The dataset is based on DUC 2005-2007 datasets in [NIST](https://www-nlpir.nist.gov/projects/duc/data.html). Please ask for their data access before using our dataset. The dataset is located in `dataset/`. Please refer to the [paper](paper/kiqfs.pdf) for more details of the dataset.
 
 ### Data Structure
 
