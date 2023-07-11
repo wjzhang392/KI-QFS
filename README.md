@@ -34,7 +34,7 @@ For knowledge corpora, we consider three alternatives:
     <li>Augmented corpus</li>
 </ul>
 
-The Internal corpus is `kiqfs_internal_knowledge.json`, which only contain documents from the DUC datasets. The data format is:
+The internal corpus is `kiqfs_internal_knowledge.json`, which only contain documents from the DUC datasets. The data format is:
 
 ```python
 {
