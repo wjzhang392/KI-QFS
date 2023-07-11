@@ -15,8 +15,8 @@ The dataset is based on DUC 2005-2007 dataset in [NIST](https://www-nlpir.nist.g
 
 ### Data Structure
 
-We repurpose the DUC datasets for a knowledge-intensive task, which splits them into input-output pairs and knowledge corpus. <br>
-For the pairs, we divide them into train, validation, and test splits, which are `kiqfs_pairs_train/val/test.jsonl`. For each `*.jsonl`. The data format is:
+We repurpose the DUC datasets for a knowledge-intensive task, spliting them into input-output pairs and a knowledge corpus. <br>
+For the pairs, we also divide them into train, validation, and test splits, which are `kiqfs_pairs_train/val/test.jsonl`. For each `*.jsonl`. The data format is:
 
 ```python
 {
@@ -29,9 +29,9 @@ For the pairs, we divide them into train, validation, and test splits, which are
 For knowledge corpora, we consider three alternatives: 
 
 <ul>
-    <li>internal corpus</li>
-    <li>external corpus</li>
-    <li>argumented corpus</li>
+    <li>Internal corpus</li>
+    <li>External corpus</li>
+    <li>Augmented corpus</li>
 </ul>
 
 The Internal corpus is `kiqfs_internal_knowledge.json`, which only contain documents from the DUC datasets. The data format is:
@@ -45,7 +45,7 @@ The Internal corpus is `kiqfs_internal_knowledge.json`, which only contain docum
 
 For external corpus, we use Wikipedia dump `kilt_w100_title.tsv` from [KILT Benchmark](https://github.com/facebookresearch/KILT/tree/main/kilt/retrievers#DPR). Please follow their instructions to download the data. <br>
 We also provide processed version of internal corpus `kiqfs_internal_w100_title.tsv`, which has the same data format with `kilt_w100_title.tsv`. <br>
-For augumented corpus, we simply combine previous corpors to obtain it. 
+For augmented corpus, we simply combine previous two corpora to form it.
 
 
 ## Relevance Annotation
